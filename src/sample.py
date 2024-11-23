@@ -7,7 +7,7 @@ from src.model.unet import UNet
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 unet = UNet().to(device)
-unet.load_state_dict(torch.load("checkpoints/DDPM_Uncondtional_cat/ckpt_395.pt", weights_only=True))
+unet.load_state_dict(torch.load("../checkpoints/DDPM_Uncondtional_cat/ckpt_395.pt", weights_only=True))
 
 seed = torch.randint(0, 100000, (1,)).item()
 torch.manual_seed(seed)
