@@ -1,4 +1,3 @@
+# Diffusion Model to create Synthetic cats images
 
-
-# Forward process
-# 
+dataset : https://www.kaggle.com/datasets/ashfakyeafi/cat-dog-images-for-classification
