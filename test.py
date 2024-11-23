@@ -16,5 +16,5 @@ torch.cuda.manual_seed_all(seed)
 
 
 diffusion = Diffusion(noise_steps=1000, beta_start=1e-4, beta_end=0.02, img_size=64, device=device)
-diffusion.sample_with_step(unet, 5,"results/image_gif3")
+diffusion.sample_with_step(unet, 1,"results/image_gif3")
 
